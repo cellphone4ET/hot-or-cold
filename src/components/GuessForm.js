@@ -10,12 +10,11 @@ export default class GuessForm extends React.Component {
 
   onSubmit(e) {
     e.preventDefault();
-    const text = this.state.text;
-    console.log(text);
-
+    const text = parseInt(this.state.text.trim(), 10);
+    this.props.onAdd(text);
     this.setState({
       text: ''
-    })
+    });
 
   }
 

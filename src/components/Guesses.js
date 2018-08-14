@@ -1,9 +1,12 @@
 import React from 'react';
 
 export default function Guesses(props) {
+  const guesses = props.guesses.map((guess, index) => {
+    return <span key={index}>{guess}{" "}</span>
+  })
+
   return(
     <div>
-      <p>{props.guesses}</p>
-      <p>You have {10 - props.guesses.length} guesses left.</p>
+      <p>{guesses}</p>
     </div>);
 }
