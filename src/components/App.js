@@ -44,8 +44,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.currentNumber);
-    console.log(this.state.guesses);
     return (
       <div className="App">
         <p>Hot or Cold Game</p>
