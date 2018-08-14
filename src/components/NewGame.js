@@ -1,16 +1,6 @@
 import React from 'react';
 
-export default class NewGame extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  // newGame(e) {
-  //
-  // }
-
-  render() {
+export default function NewGame(props) {
     return (
-      <button>New Game</button>);
-  }
+      <button onClick={()=>props.newGame()}>New Game</button>);
 }
